@@ -1,0 +1,295 @@
+{
+  "run_id": "run-1779481704230",
+  "job_index": 1,
+  "params": {
+    "owner_user_id": "user-1774822953462",
+    "owner_username": "admin",
+    "owner_display_name": "Administrator",
+    "count": 3,
+    "archetype": "tool",
+    "market": "France",
+    "language": "fr",
+    "country": "FR",
+    "brief": "Estimez le rendu de vos campagnes publicitaires extérieures dans des contextes urbains variés. Idéal pour les…",
+    "notes": "Visualisez l'impact de vos affiches publicitaires et de votre signalétique dans différents environnements urbains parisiens. Adaptez la taille, le positionnement et le contenu pour une effi…\nCe site aide à la planification d'insertions publicitaires physiques en milieu urbain, en simulant l'apparition d'un visuel sur des supports (panneaux, abribus, façades) à des emplacements choisis.",
+    "import_notes": "",
+    "growth_job_id": "",
+    "growth_slug": "",
+    "growth_kind": "",
+    "external_site_request_id": "",
+    "external_client_ref": "",
+    "external_source_label": "",
+    "dashboard_mode": "builder",
+    "network_site_format": "forum",
+    "network_primary_topic": "",
+    "network_primary_geo": "",
+    "network_domain_pool": "forum-de-jeu.shop",
+    "network_hosting_pool": "4vps:netoper | server_id=447345 | ip=5.253.59.18 | ssh_user=root | ssh_port=22",
+    "network_dns_strategy": "auto_pool_assign",
+    "network_domain_flow": "manual",
+    "network_content_strategy": "",
+    "network_model_concept": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_seo": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_build": "google/gemini-2.5-flash",
+    "network_model_qa": "anthropic/claude-haiku-4.5",
+    "network_model_growth": "google/gemini-2.5-flash-lite:nitro",
+    "network_blueprint_id": "",
+    "mode": "production",
+    "run_kind": "generated_batch",
+    "publish_target": "render",
+    "requested_publish_target": "render",
+    "provider_space_id": "provider-space",
+    "provider_space_name": "Provider space",
+    "allow_url_fallback": false,
+    "railway_project_id_override": "",
+    "railway_environment_id_override": "",
+    "railway_service_id_override": "",
+    "railway_service_name_override": "",
+    "github_repo_private": true,
+    "stage_models": {
+      "ideation": "google/gemini-2.5-flash-lite:nitro",
+      "spec": "google/gemini-2.5-flash",
+      "copy": "google/gemini-2.5-flash-lite:nitro",
+      "qa": "anthropic/claude-haiku-4.5",
+      "escalation": "anthropic/claude-sonnet-4.6"
+    },
+    "archetype_display": "mixed batch",
+    "archetype_mix": [
+      "tool",
+      "calculator",
+      "generator"
+    ],
+    "forced_design_theme": "future-in-motion",
+    "forced_structure_preset": "bento-signal",
+    "site_idea_title": "Simulateur d'Impact Visuel pour Publicités Urbaines",
+    "site_idea_summary": "Visualisez l'impact de vos affiches publicitaires et de votre signalétique dans différents environnements urbains parisiens. Adaptez la taille, le positionnement et le contenu pour une effi…"
+  },
+  "site_spec": {
+    "slug": "simulateur-d-impact-visuel-pour-publicites-urbaines-1",
+    "theme": {
+      "name": "Future in Motion",
+      "slug": "future-in-motion",
+      "eyebrow": "Rhythm Layer",
+      "family": "future-in-motion",
+      "moods": [
+        "kinetic",
+        "dynamic",
+        "futuristic",
+        "sharp"
+      ],
+      "archetypes": [
+        "tool",
+        "generator",
+        "calculator"
+      ],
+      "niches": [
+        "ai utility",
+        "media tools",
+        "marketing utility",
+        "research labs",
+        "ops"
+      ],
+      "keywords": [
+        "motion",
+        "rhythm",
+        "dynamic",
+        "future",
+        "gradient"
+      ],
+      "token_index": [
+        "calculator",
+        "dynamic",
+        "future",
+        "futuristic",
+        "generator",
+        "gradient",
+        "kinetic",
+        "labs",
+        "layer",
+        "marketing",
+        "media",
+        "motion",
+        "ops",
+        "research",
+        "rhythm",
+        "sharp",
+        "tool",
+        "tools",
+        "utility"
+      ],
+      "font_embed": "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap",
+      "display_font": "\"Syne\", sans-serif",
+      "body_font": "\"Inter\", sans-serif",
+      "layout": "asymmetric",
+      "card_style": "glass",
+      "button_style": "gradient",
+      "decor_style": "orbs",
+      "hero_template": "0.88fr 1.12fr",
+      "seo_template": "1.18fr 0.82fr",
+      "feature_columns": 2,
+      "faq_columns": 3,
+      "hero_min_height": "78vh",
+      "panel_radius": "28px",
+      "card_radius": "26px",
+      "chip_radius": "999px",
+      "button_radius": "18px",
+      "outline_width": "1px",
+      "backdrop_blur": "22px",
+      "palette": {
+        "bg": "linear-gradient(135deg, #0b132b 0%, #1d4ed8 38%, #22d3ee 100%)",
+        "surface": "rgba(9, 18, 38, 0.74)",
+        "surface_border": "rgba(34,211,238,0.18)",
+        "text": "#f3f9ff",
+        "muted": "#c0d7ef",
+        "accent": "#22d3ee",
+        "accent_alt": "#f97316",
+        "hero_glow": "rgba(34, 211, 238, 0.22)",
+        "button_text": "#071219",
+        "panel_alt": "rgba(255,255,255,0.06)",
+        "shadow": "0 30px 90px rgba(2, 6, 23, 0.34)",
+        "input_fill": "rgba(255,255,255,0.06)"
+      }
+    },
+    "structure": {
+      "name": "Bento Signal",
+      "slug": "bento-signal",
+      "hero_variant": "command",
+      "proof_variant": "badges",
+      "section_order": [
+        "proof",
+        "features",
+        "seo",
+        "faq"
+      ],
+      "feature_columns": 4,
+      "faq_columns": 2,
+      "family": "modular-grid",
+      "moods": [
+        "modular",
+        "curated",
+        "technical"
+      ],
+      "archetypes": [
+        "tool",
+        "generator",
+        "calculator"
+      ],
+      "niches": [
+        "ai tools",
+        "dashboards",
+        "productivity",
+        "research"
+      ],
+      "keywords": [
+        "bento",
+        "cards",
+        "signal",
+        "system"
+      ],
+      "token_index": [
+        "badges",
+        "bento",
+        "calculator",
+        "cards",
+        "command",
+        "curated",
+        "dashboards",
+        "faq",
+        "features",
+        "generator",
+        "grid",
+        "modular",
+        "productivity",
+        "proof",
+        "research",
+        "seo",
+        "signal",
+        "system",
+        "technical",
+        "tool",
+        "tools"
+      ]
+    },
+    "render_direction": "signal-bento",
+    "render_direction_name": "Signal Bento",
+    "page_blueprint": "dossier-rail",
+    "page_blueprint_name": "Dossier Rail",
+    "title": "Simulateur d'Impact Visuel pour Publicités Urbaines",
+    "tagline": "Estimez le rendu de vos campagnes",
+    "description": "Visualisez l",
+    "feature_prefix": "Bloc",
+    "action": "Utiliser l'outil",
+    "cta_primary": "Découvrir nos offres",
+    "cta_secondary": "Consulter la FAQ",
+    "inputs": [
+      {
+        "id": "primary",
+        "label": "Texte ou besoin",
+        "type": "text",
+        "placeholder": "Votre besoin principal",
+        "weight": 1.0
+      },
+      {
+        "id": "context",
+        "label": "Contexte",
+        "type": "text",
+        "placeholder": "Situation ou objectif",
+        "weight": 1.0
+      },
+      {
+        "id": "scope",
+        "label": "Intensité",
+        "type": "number",
+        "placeholder": "3",
+        "weight": 0.3
+      }
+    ],
+    "hero_metrics": [
+      {
+        "value": "Signal Bento",
+        "label": "Cadence"
+      },
+      {
+        "value": "3",
+        "label": "Entrées"
+      },
+      {
+        "value": "Résultat recommandé",
+        "label": "Sortie"
+      }
+    ],
+    "trust_labels": [
+      "Signal Bento",
+      "Découvrir nos offres",
+      "Résultat recommandé",
+      "Utilitaire immédiat",
+      "Structure SEO claire"
+    ],
+    "result_label": "Résultat recommandé",
+    "result_unit": "",
+    "runtime_mode": "analysis_tool",
+    "page_variant": "console",
+    "faq_topic": "Simulateur d'Impact Visuel pour Publicités Urbaines",
+    "faq_entries": [
+      {
+        "question": "Pourquoi utiliser cet outil pour Simulateur d'Impact Visuel pour Publicités Urbaines ?",
+        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
+      },
+      {
+        "question": "Le résultat est-il immédiat ?",
+        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
+      },
+      {
+        "question": "Cette page est-elle adaptée au SEO ?",
+        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
+      }
+    ],
+    "seo_paragraphs": [
+      "Cette page capte une intention forte autour de Simulateur d'Impact Visuel pour Publicités Urbaines et la transforme en action utile pour un public situé sur France.",
+      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
+      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
+    ],
+    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Simulateur d&#x27;Impact Visuel pour Publicités Urbaines | Estimez le rendu de vos campagnes</title>\n    <meta name=\"description\" content=\"Visualisez l\">\n    <style>\n        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif; background-color: #0d0d0d; color: #f0f0f0; overflow-x: hidden; }\n        .container { max-width: 1200px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }\n        h1, h2, h3 { color: #ecbff3; font-weight: 700; line-height: 1.1; margin-bottom: 15px; }\n        h1 { font-size: 2.8em; text-transform: uppercase; letter-spacing: 1px; }\n        h2 { font-size: 2em; text-transform: uppercase; letter-spacing: 0.8px; }\n        h3 { font-size: 1.5em; letter-spacing: 0.5px; }\n        p { line-height: 1.6; margin-bottom: 10px; }\n        .card { background-color: #1a1a1a; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); border-left: 5px solid #ecbff3; }\n        .full-width { grid-column: 1 / -1; }\n        .flex-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; }\n        .flex-row > div { flex: 1; min-width: 300px; }\n        label { display: block; margin-bottom: 8px; color: #ecbff3; font-weight: 600; }\n        input[type=\"text\"], input[type=\"number\"], select, textarea {\n            width: calc(100% - 20px); padding: 12px; margin-bottom: 15px; border: 1px solid #555; border-radius: 5px;\n            background-color: #2a2a2a; color: #f0f0f0; box-sizing: border-box; font-size: 1em;\n        }\n        input[type=\"text\"]:focus, input[type=\"number\"]:focus, select:focus, textarea:focus { border-color: #ecbff3; outline: none; }\n        button {\n            background-color: #ecbff3; color: #1a1a1a; padding: 12px 25px; border: none; border-radius: 5px;\n            cursor: pointer; font-size: 1.1em; font-weight: 700; transition: background-color 0.3s ease;\n            text-transform: uppercase; letter-spacing: 0.5px;\n        }\n        button:hover { background-color: #d19fe0; }\n        .result-area { background-color: #1a1a1a; padding: 25px; border-radius: 8px; border: 1px dashed #ecbff3; min-height: 150px; margin-top: 20px; }\n        .result-item { margin-bottom: 15px; padding: 10px; background-color: #2a2a2a; border-left: 3px solid #66bb6a; border-radius: 4px; }\n        .result-item strong { color: #66bb6a; }\n        .seo-section { background-color: #0d0d0d; color: #b0b0b0; padding: 40px 20px; font-size: 0.9em; text-align: center; border-top: 1px solid #2a2a2a; }\n        .seo-section h3 { color: #f0f0f0; margin-bottom: 20px; }\n        .seo-section p { max-width: 800px; margin: 0 auto 15px auto; }\n        .seo-section a { color: #ecbff3; text-decoration: none; }\n        .seo-section a:hover { text-decoration: underline; }\n        .strip { background-color: #333; padding: 15px 20px; margin-bottom: 20px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; border-left: 5px solid #6a1a7b; }\n        .strip p { margin: 0; color: #f0f0f0; }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://simulateur-d-impact-visuel-pour-publicites-urbaines-1.onrender.com\">\n    <meta property=\"og:title\" content=\"Simulateur d&#x27;Impact Visuel pour Publicités Urbaines\">\n    <meta property=\"og:description\" content=\"Visualisez l\">\n    <meta property=\"og:url\" content=\"https://simulateur-d-impact-visuel-pour-publicites-urbaines-1.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Simulateur d'Impact Visuel pour Publicités Urbaines\", \"description\": \"Visualisez l\", \"url\": \"https://simulateur-d-impact-visuel-pour-publicites-urbaines-1.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"simulateur-d-impact-visuel-pour-publicites-urbaines-1\" data-runtime-mode=\"analysis_tool\">\n    <div class=\"container\">\n        <div class=\"card full-width\">\n            <h1>Simulateur d'Impact Visuel pour Publicités Urbaines</h1>\n            <p>Visualisez l'impact de vos affiches publicitaires et de votre signalétique dans différents environnements urbains parisiens. Adaptez la taille, le positionnement et le contenu pour une efficacité maximale.</p>\n            <div class=\"strip\">\n                <p>Planifiez vos campagnes extérieures avec précision. Optimisez chaque insertion.</p>\n                <button data-affiliate-slot=\"promo-button-1\">Découvrir nos offres</button>\n            </div>\n        </div>\n\n        <div class=\"card\">\n            <h2>Estimez le rendu de vos campagnes</h2>\n            <p>Cet outil vous aide à planifier vos insertions publicitaires physiques en milieu urbain. Simulez l'apparition d'un visuel sur des supports variés à des emplacements clés de Paris.</p>\n            <form id=\"tool-form\">\n                <label for=\"visual-theme\">Thème du visuel (mots-clés)</label>\n                <input type=\"text\" id=\"visual-theme\" placeholder=\"Ex: luxe, technologie, écologique, événementiel\" value=\"nouvelle voiture électrique\">\n\n                <label for=\"location-type\">Type d'emplacement urbain</label>\n                <select id=\"location-type\">\n                    <option value=\"station_metro\">Station de métro animée</option>\n                    <option value=\"abribus_haussmannien\">Abribus style Haussmannien</option>\n                    <option value=\"facade_moderne\">Façade de bâtiment moderne</option>\n                    <option value=\"quai_seine\">Quai de Seine (panneau géant)</option>\n                    <option value=\"kiosque_presse\">Kiosque à journaux</option>\n                </select>\n\n                <label for=\"target-audience\">Cible démographique</label>\n                <input type=\"text\" id=\"target-audience\" placeholder=\"Ex: jeunes actifs, familles, touristes\" value=\"jeunes actifs urbains\">\n\n                <label for=\"message-key\">Message clé de la campagne</label>\n                <input type=\"text\" id=\"message-key\" placeholder=\"Ex: Innovation, Économie, Durabilité\" value=\"Mobilité durable et design\">\n\n                <button type=\"submit\" id=\"tool-submit\">Simuler l'impact</button>\n            </form>\n        </div>\n\n        <div class=\"card\">\n            <h2>Votre simulation en un coup d'œil</h2>\n            <p>Les résultats ci-dessous vous donnent un aperçu des différentes approches de titrage pour maximiser l'attention et la mémorisation de votre message. Choisissez le style qui correspond à votre stratégie.</p>\n            <div id=\"tool-result\" class=\"result-area\">\n                <p id=\"result-detail\" style=\"color: #b0b0b0;\">Vos résultats apparaîtront ici après la simulation.</p>\n            </div>\n            <div class=\"strip\" style=\"margin-top: 20px;\">\n                <p>Besoin d'aller plus loin ? Contactez nos experts.</p>\n                <button data-affiliate-slot=\"contact-button\">Prendre rendez-vous</button>\n            </div>\n        </div>\n\n        <div class=\"card full-width flex-row\">\n            <div>\n                <h3>Pourquoi simuler ?</h3>\n                <p>La publicité extérieure est un art et une science. Chaque emplacement, chaque support et chaque visuel interagissent pour créer une perception unique. Notre simulateur vous permet de pré-visualiser ces dynamiques, d'ajuster vos créations et d'optimiser votre budget avant le déploiement.</p>\n                <p>Évitez les approximations. Gagnez en efficacité et en pertinence auprès de votre audience parisienne.</p>\n            </div>\n            <div>\n                <h3>Nos engagements</h3>\n                <ul>\n                    <li style=\"margin-bottom: 10px;\">Interface intuitive pour une prise en main rapide.</li>\n                    <li style=\"margin-bottom: 10px;\">Simulations basées sur des données contextuelles urbaines.</li>\n                    <li style=\"margin-bottom: 10px;\">Aide à la décision pour vos investissements publicitaires.</li>\n                </ul>\n                <button data-affiliate-slot=\"guide-button\">Télécharger notre guide</button>\n            </div>\n        </div>\n\n    </div>\n\n    <div class=\"seo-section\">\n        <h3>Optimisez votre présence à Paris avec notre Simulateur d'Affichage Urbain</h3>\n        <p>Vous recherchez des solutions innovantes pour votre <a href=\"#\">affichage publicitaire Paris</a> ? Notre outil unique vous aide à visualiser l'impact de vos campagnes OOH (Out-Of-Home) dans des contextes parisiens réels. Que ce soit pour des <a href=\"#\">panneaux publicitaires</a>, de la <a href=\"#\">signalétique urbaine</a> ou des <a href=\"#\">publicités abribus</a>, simulez l'intégration de votre visuel avant le lancement. Comprenez la portée de votre <a href=\"#\">campagne affichage</a> et maximisez votre ROI à travers une planification stratégique.</p>\n        <p>Que vous soyez une agence média, un annonceur ou un créatif, notre plateforme est l'outil indispensable pour estimer la visibilité de vos <a href=\"#\">publicités extérieures</a> en milieu urbain. Explorez les meilleures options d' <a href=\"#\">emplacement publicitaire Paris</a> et boostez l'attractivité de votre marque. Découvrez comment notre simulateur peut transformer votre approche de la <a href=\"#\">communication urbaine</a>.</p>\n    </div>\n\n    <script>\n        document.getElementById('tool-form').addEventListener('submit', function(e) {\n            e.preventDefault();\n\n            const visualTheme = document.getElementById('visual-theme').value;\n            const locationType = document.getElementById('location-type').value;\n            const targetAudience = document.getElementById('target-audience').value;\n            const messageKey = document.getElementById('message-key').value;\n            const resultDiv = document.getElementById('tool-result');\n\n            let seoHeadlines = [];\n            let clickbaitHeadlines = [];\n            let expertHeadlines = [];\n            let softHeadlines = [];\n            let commercialHeadlines = [];\n\n            // Generate Headlines based on inputs\n            // SEO\n            seoHeadlines.push(`Optimisez votre \"${messageKey}\" sur les emplacements \"${locationType.replace('_', ' ')}\" à Paris.`);\n            seoHeadlines.push(`Campagne ${visualTheme} : Maximizez l'impact OOH pour \"${targetAudience}\".`);\n            seoHeadlines.push(`Visibilité accrue : Publicité \"${messageKey}\" en milieu urbain parisien.`);\n            \n            // Clickbait\n            clickbaitHeadlines.push(`Votre pub \"${visualTheme}\" va-t-elle CHANGER la ville ? Découvrez-le !`);\n            clickbaitHeadlines.push(`L'erreur fatale en affichage \"${locationType.replace('_', ' ')}\" que vous DEVEZ éviter (message : ${messageKey}) !`);\n            clickbaitHeadlines.push(`Révélation : Ce que votre cible \"${targetAudience}\" pense de votre \"${visualTheme}\" avant même de la voir !`);\n\n            // Expert\n            expertHeadlines.push(`Analyse sémantique et contextuelle de l'insertion \"${messageKey}\" pour \"${locationType.replace('_', ' ')}\".`);\n            expertHeadlines.push(`Modélisation prédictive : Impact de votre visuel \"${visualTheme}\" sur la perception \"${targetAudience}\".`);\n            expertHeadlines.push(`Stratégie d'optimisation du message \"${messageKey}\" pour une saturation visuelle urbaine contrôlée.`);\n\n            // Soft\n            softHeadlines.push(`Comment votre message \"${messageKey}\" peut toucher le cœur de Paris.`);\n            softHeadlines.push(`Créez une connexion unique avec les \"${targetAudience}\" grâce à votre \"${visualTheme}\".`);\n            softHeadlines.push(`Un aperçu délicat de l'empreinte de votre campagne \"${visualTheme}\" sur la ville.`);\n\n            // Commercial\n            commercialHeadlines.push(`Boostez vos ventes : Affichage \"${visualTheme}\" ultra-performant à Paris.`);\n            commercialHeadlines.push(`Attirez plus de \"${targetAudience}\" avec une publicité \"${messageKey}\" percutante.`);\n            commercialHeadlines.push(`Investissez malin : Le retour sur investissement de votre campagne \"${visualTheme}\" en ${locationType.replace('_', ' ')}.`);\n\n\n            let html = `\n                <h3>Résultats de la Simulation pour votre campagne \"${messageKey}\"</h3>\n                <p>Voici des propositions de titrages pour différentes stratégies d'accroche :</p>\n                <div class=\"result-item\"><strong>Titrages SEO :</strong><br>${seoHeadlines.map(h => `- ${h}`).join('<br>')}</div>\n                <div class=\"result-item\"><strong>Titrages Clickbait :</strong><br>${clickbaitHeadlines.map(h => `- ${h}`).join('<br>')}</div>\n                <div class=\"result-item\"><strong>Titrages Experts :</strong><br>${expertHeadlines.map(h => `- ${h}`).join('<br>')}</div>\n                <div class=\"result-item\"><strong>Titrages \"Soft\" / Émotionnels :</strong><br>${softHeadlines.map(h => `- ${h}`).join('<br>')}</div>\n                <div class=\"result-item\"><strong>Titrages Commerciaux :</strong><br>${commercialHeadlines.map(h => `- ${h}`).join('<br>')}</div>\n            `;\n\n            resultDiv.innerHTML = html;\n        });\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.removeAttribute(\"rel\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  let qaFinished = false;\n  let qaWatchdog = null;\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function primaryAction(form) {\n    if (!form) return null;\n    return (\n      document.getElementById(\"tool-submit\") ||\n      form.querySelector(\"#tool-submit\") ||\n      form.querySelector(\"[data-primary-action]\") ||\n      form.querySelector(\"button[type=submit]\") ||\n      form.querySelector(\"button\") ||\n      form.querySelector(\"input[type=submit]\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (type === \"hidden\" || type === \"submit\" || type === \"button\" || type === \"reset\" || type === \"image\" || type === \"file\") {\n      return;\n    }\n    const currentValue = normalize(field.value);\n    if (tag === \"select\") {\n      if (currentValue) return;\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      if (currentValue) return;\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      if (currentValue) return;\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      if (currentValue) return;\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      if (currentValue) return;\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      if (currentValue) return;\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      if (currentValue) return;\n      field.value = sampleNumber(field);\n      return;\n    }\n    if (currentValue) return;\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    if (qaFinished) return;\n    qaFinished = true;\n    if (qaWatchdog) {\n      window.clearTimeout(qaWatchdog);\n      qaWatchdog = null;\n    }\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n    window.setTimeout(function () {\n      try {\n        window.stop();\n      } catch (_error) {}\n    }, 0);\n  }\n\n  function installModalGuards() {\n    const noop = function () {};\n    const approve = function () { return true; };\n    const empty = function () { return \"\"; };\n    try { window.alert = noop; } catch (_error) {}\n    try { window.confirm = approve; } catch (_error) {}\n    try { window.prompt = empty; } catch (_error) {}\n  }\n\n  function triggerAction(form, action) {\n    try {\n      if (typeof form.requestSubmit === \"function\") {\n        form.requestSubmit(action || undefined);\n        return;\n      }\n    } catch (_error) {}\n    if (action && typeof action.click === \"function\") {\n      action.click();\n      return;\n    }\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    qaWatchdog = window.setTimeout(function () {\n      stamp(\"fail\", \"QA smoke timed out before the page reported a usable result.\", \"\");\n    }, 7000);\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    installModalGuards();\n    try {\n      form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke sample failed: ${error.message}` : \"QA smoke sample failed before submit.\", \"\");\n      return;\n    }\n    const action = primaryAction(form);\n    try {\n      triggerAction(form, action);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke submit failed: ${error.message}` : \"QA smoke submit failed.\", \"\");\n      return;\n    }\n    inspectResult(before, 10);\n  }\n\n  window.addEventListener(\"error\", function (event) {\n    const message = event && event.message ? event.message : \"JavaScript runtime error during QA smoke.\";\n    stamp(\"fail\", `QA smoke JS error: ${message}`, \"\");\n  }, { once: true });\n\n  window.addEventListener(\"unhandledrejection\", function (event) {\n    const reason = event && event.reason;\n    const detail = typeof reason === \"string\"\n      ? reason\n      : reason && reason.message\n        ? reason.message\n        : \"Unhandled promise rejection during QA smoke.\";\n    stamp(\"fail\", `QA smoke rejection: ${detail}`, \"\");\n  }, { once: true });\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
+    "generation_mode": "direct_html"
+  }
+}
