@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur d&#x27;Impact Visuel pour Publicités Urbaines | Estimez le rendu de vos campagnes</title>
+    <meta name="description" content="Visualisez l">
+    <style>
+        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #0d0d0d; color: #f0f0f0; overflow-x: hidden; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        h1, h2, h3 { color: #ecbff3; font-weight: 700; line-height: 1.1; margin-bottom: 15px; }
+        h1 { font-size: 2.8em; text-transform: uppercase; letter-spacing: 1px; }
+        h2 { font-size: 2em; text-transform: uppercase; letter-spacing: 0.8px; }
+        h3 { font-size: 1.5em; letter-spacing: 0.5px; }
+        p { line-height: 1.6; margin-bottom: 10px; }
+        .card { background-color: #1a1a1a; padding: 25px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); border-left: 5px solid #ecbff3; }
+        .full-width { grid-column: 1 / -1; }
+        .flex-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: stretch; }
+        .flex-row > div { flex: 1; min-width: 300px; }
+        label { display: block; margin-bottom: 8px; color: #ecbff3; font-weight: 600; }
+        input[type="text"], input[type="number"], select, textarea {
+            width: calc(100% - 20px); padding: 12px; margin-bottom: 15px; border: 1px solid #555; border-radius: 5px;
+            background-color: #2a2a2a; color: #f0f0f0; box-sizing: border-box; font-size: 1em;
+        }
+        input[type="text"]:focus, input[type="number"]:focus, select:focus, textarea:focus { border-color: #ecbff3; outline: none; }
+        button {
+            background-color: #ecbff3; color: #1a1a1a; padding: 12px 25px; border: none; border-radius: 5px;
+            cursor: pointer; font-size: 1.1em; font-weight: 700; transition: background-color 0.3s ease;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        button:hover { background-color: #d19fe0; }
+        .result-area { background-color: #1a1a1a; padding: 25px; border-radius: 8px; border: 1px dashed #ecbff3; min-height: 150px; margin-top: 20px; }
+        .result-item { margin-bottom: 15px; padding: 10px; background-color: #2a2a2a; border-left: 3px solid #66bb6a; border-radius: 4px; }
+        .result-item strong { color: #66bb6a; }
+        .seo-section { background-color: #0d0d0d; color: #b0b0b0; padding: 40px 20px; font-size: 0.9em; text-align: center; border-top: 1px solid #2a2a2a; }
+        .seo-section h3 { color: #f0f0f0; margin-bottom: 20px; }
+        .seo-section p { max-width: 800px; margin: 0 auto 15px auto; }
+        .seo-section a { color: #ecbff3; text-decoration: none; }
+        .seo-section a:hover { text-decoration: underline; }
+        .strip { background-color: #333; padding: 15px 20px; margin-bottom: 20px; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; border-left: 5px solid #6a1a7b; }
+        .strip p { margin: 0; color: #f0f0f0; }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://simulateur-d-impact-visuel-pour-publicites-urbaines-1.onrender.com">
+    <meta property="og:title" content="Simulateur d&#x27;Impact Visuel pour Publicités Urbaines">
+    <meta property="og:description" content="Visualisez l">
+    <meta property="og:url" content="https://simulateur-d-impact-visuel-pour-publicites-urbaines-1.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Simulateur d'Impact Visuel pour Publicités Urbaines", "description": "Visualisez l", "url": "https://simulateur-d-impact-visuel-pour-publicites-urbaines-1.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="simulateur-d-impact-visuel-pour-publicites-urbaines-1" data-runtime-mode="analysis_tool">
+    <div class="container">
+        <div class="card full-width">
+            <h1>Simulateur d'Impact Visuel pour Publicités Urbaines</h1>
+            <p>Visualisez l'impact de vos affiches publicitaires et de votre signalétique dans différents environnements urbains parisiens. Adaptez la taille, le positionnement et le contenu pour une efficacité maximale.</p>
+            <div class="strip">
+                <p>Planifiez vos campagnes extérieures avec précision. Optimisez chaque insertion.</p>
+                <button data-affiliate-slot="promo-button-1">Découvrir nos offres</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Estimez le rendu de vos campagnes</h2>
+            <p>Cet outil vous aide à planifier vos insertions publicitaires physiques en milieu urbain. Simulez l'apparition d'un visuel sur des supports variés à des emplacements clés de Paris.</p>
+            <form id="tool-form">
+                <label for="visual-theme">Thème du visuel (mots-clés)</label>
+                <input type="text" id="visual-theme" placeholder="Ex: luxe, technologie, écologique, événementiel" value="nouvelle voiture électrique">
+
+                <label for="location-type">Type d'emplacement urbain</label>
+                <select id="location-type">
+                    <option value="station_metro">Station de métro animée</option>
+                    <option value="abribus_haussmannien">Abribus style Haussmannien</option>
+                    <option value="facade_moderne">Façade de bâtiment moderne</option>
+                    <option value="quai_seine">Quai de Seine (panneau géant)</option>
+                    <option value="kiosque_presse">Kiosque à journaux</option>
+                </select>
+
+                <label for="target-audience">Cible démographique</label>
+                <input type="text" id="target-audience" placeholder="Ex: jeunes actifs, familles, touristes" value="jeunes actifs urbains">
+
+                <label for="message-key">Message clé de la campagne</label>
+                <input type="text" id="message-key" placeholder="Ex: Innovation, Économie, Durabilité" value="Mobilité durable et design">
+
+                <button type="submit" id="tool-submit">Simuler l'impact</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Votre simulation en un coup d'œil</h2>
+            <p>Les résultats ci-dessous vous donnent un aperçu des différentes approches de titrage pour maximiser l'attention et la mémorisation de votre message. Choisissez le style qui correspond à votre stratégie.</p>
+            <div id="tool-result" class="result-area">
+                <p id="result-detail" style="color: #b0b0b0;">Vos résultats apparaîtront ici après la simulation.</p>
+            </div>
+            <div class="strip" style="margin-top: 20px;">
+                <p>Besoin d'aller plus loin ? Contactez nos experts.</p>
+                <button data-affiliate-slot="contact-button">Prendre rendez-vous</button>
+            </div>
+        </div>
+
+        <div class="card full-width flex-row">
+            <div>
+                <h3>Pourquoi simuler ?</h3>
+                <p>La publicité extérieure est un art et une science. Chaque emplacement, chaque support et chaque visuel interagissent pour créer une perception unique. Notre simulateur vous permet de pré-visualiser ces dynamiques, d'ajuster vos créations et d'optimiser votre budget avant le déploiement.</p>
+                <p>Évitez les approximations. Gagnez en efficacité et en pertinence auprès de votre audience parisienne.</p>
+            </div>
+            <div>
+                <h3>Nos engagements</h3>
+                <ul>
+                    <li style="margin-bottom: 10px;">Interface intuitive pour une prise en main rapide.</li>
+                    <li style="margin-bottom: 10px;">Simulations basées sur des données contextuelles urbaines.</li>
+                    <li style="margin-bottom: 10px;">Aide à la décision pour vos investissements publicitaires.</li>
+                </ul>
+                <button data-affiliate-slot="guide-button">Télécharger notre guide</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="seo-section">
+        <h3>Optimisez votre présence à Paris avec notre Simulateur d'Affichage Urbain</h3>
+        <p>Vous recherchez des solutions innovantes pour votre <a href="#">affichage publicitaire Paris</a> ? Notre outil unique vous aide à visualiser l'impact de vos campagnes OOH (Out-Of-Home) dans des contextes parisiens réels. Que ce soit pour des <a href="#">panneaux publicitaires</a>, de la <a href="#">signalétique urbaine</a> ou des <a href="#">publicités abribus</a>, simulez l'intégration de votre visuel avant le lancement. Comprenez la portée de votre <a href="#">campagne affichage</a> et maximisez votre ROI à travers une planification stratégique.</p>
+        <p>Que vous soyez une agence média, un annonceur ou un créatif, notre plateforme est l'outil indispensable pour estimer la visibilité de vos <a href="#">publicités extérieures</a> en milieu urbain. Explorez les meilleures options d' <a href="#">emplacement publicitaire Paris</a> et boostez l'attractivité de votre marque. Découvrez comment notre simulateur peut transformer votre approche de la <a href="#">communication urbaine</a>.</p>
+    </div>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const visualTheme = document.getElementById('visual-theme').value;
+            const locationType = document.getElementById('location-type').value;
+            const targetAudience = document.getElementById('target-audience').value;
+            const messageKey = document.getElementById('message-key').value;
+            const resultDiv = document.getElementById('tool-result');
+
+            let seoHeadlines = [];
+            let clickbaitHeadlines = [];
+            let expertHeadlines = [];
+            let softHeadlines = [];
+            let commercialHeadlines = [];
+
+            // Generate Headlines based on inputs
+            // SEO
+            seoHeadlines.push(`Optimisez votre "${messageKey}" sur les emplacements "${locationType.replace('_', ' ')}" à Paris.`);
+            seoHeadlines.push(`Campagne ${visualTheme} : Maximizez l'impact OOH pour "${targetAudience}".`);
+            seoHeadlines.push(`Visibilité accrue : Publicité "${messageKey}" en milieu urbain parisien.`);
+            
+            // Clickbait
+            clickbaitHeadlines.push(`Votre pub "${visualTheme}" va-t-elle CHANGER la ville ? Découvrez-le !`);
+            clickbaitHeadlines.push(`L'erreur fatale en affichage "${locationType.replace('_', ' ')}" que vous DEVEZ éviter (message : ${messageKey}) !`);
+            clickbaitHeadlines.push(`Révélation : Ce que votre cible "${targetAudience}" pense de votre "${visualTheme}" avant même de la voir !`);
+
+            // Expert
+            expertHeadlines.push(`Analyse sémantique et contextuelle de l'insertion "${messageKey}" pour "${locationType.replace('_', ' ')}".`);
+            expertHeadlines.push(`Modélisation prédictive : Impact de votre visuel "${visualTheme}" sur la perception "${targetAudience}".`);
+            expertHeadlines.push(`Stratégie d'optimisation du message "${messageKey}" pour une saturation visuelle urbaine contrôlée.`);
+
+            // Soft
+            softHeadlines.push(`Comment votre message "${messageKey}" peut toucher le cœur de Paris.`);
+            softHeadlines.push(`Créez une connexion unique avec les "${targetAudience}" grâce à votre "${visualTheme}".`);
+            softHeadlines.push(`Un aperçu délicat de l'empreinte de votre campagne "${visualTheme}" sur la ville.`);
+
+            // Commercial
+            commercialHeadlines.push(`Boostez vos ventes : Affichage "${visualTheme}" ultra-performant à Paris.`);
+            commercialHeadlines.push(`Attirez plus de "${targetAudience}" avec une publicité "${messageKey}" percutante.`);
+            commercialHeadlines.push(`Investissez malin : Le retour sur investissement de votre campagne "${visualTheme}" en ${locationType.replace('_', ' ')}.`);
+
+
+            let html = `
+                <h3>Résultats de la Simulation pour votre campagne "${messageKey}"</h3>
+                <p>Voici des propositions de titrages pour différentes stratégies d'accroche :</p>
+                <div class="result-item"><strong>Titrages SEO :</strong><br>${seoHeadlines.map(h => `- ${h}`).join('<br>')}</div>
+                <div class="result-item"><strong>Titrages Clickbait :</strong><br>${clickbaitHeadlines.map(h => `- ${h}`).join('<br>')}</div>
+                <div class="result-item"><strong>Titrages Experts :</strong><br>${expertHeadlines.map(h => `- ${h}`).join('<br>')}</div>
+                <div class="result-item"><strong>Titrages "Soft" / Émotionnels :</strong><br>${softHeadlines.map(h => `- ${h}`).join('<br>')}</div>
+                <div class="result-item"><strong>Titrages Commerciaux :</strong><br>${commercialHeadlines.map(h => `- ${h}`).join('<br>')}</div>
+            `;
+
+            resultDiv.innerHTML = html;
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.removeAttribute("rel");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    const currentValue = normalize(field.value);
+    if (tag === "select") {
+      if (currentValue) return;
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      if (currentValue) return;
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      if (currentValue) return;
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      if (currentValue) return;
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      if (currentValue) return;
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      if (currentValue) return;
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      if (currentValue) return;
+      field.value = sampleNumber(field);
+      return;
+    }
+    if (currentValue) return;
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
